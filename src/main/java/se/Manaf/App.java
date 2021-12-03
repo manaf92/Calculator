@@ -21,9 +21,14 @@ public class App
 
     public static void main( String[] args ){
 
-        String input="28.4+33-1+13";
+
+        System.out.println("Please, Enter your calculation as formula. \nFor Example: 27.5-3+4-20.1\n");
+        Scanner scanner=new Scanner(System.in);
+
+        String input=scanner.next();
         separateContent(input);
-        System.out.println(result());
+
+        System.out.println("the result: " + input +" = "+result());
 
 
 
@@ -86,13 +91,4 @@ public class App
     static double division(double number1, double number2){
         return  number1/number2;
     }
-
-    /**   String abc = "abc";
-     List<Character> characters =  new ArrayList<>();
-
-     for (char c : abc.toCharArray()) {
-     charList.add(c);
-     }
-     System.out.println( clal);
-     */
 }
